@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8edf0">
+  <title>ESSENZA | Ramos de flores hechos a mano</title>
+  <meta name="description" content="Ramos de flores hechos a mano con limpiapipas. Diseños grandes, medianos, chicos y personalizados. Cotiza por WhatsApp.">
+  <style>
+    :root{--rose:#b9687d;--rose-dark:#8f4c60;--cream:#fffaf5;--pink:#f8edf0;--ink:#382b30;--muted:#796970;--gold:#b89a66}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+    a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
+    .top{background:#f4e3e8;text-align:center;padding:9px 16px;font:12px Arial,sans-serif;letter-spacing:.12em;color:var(--rose-dark)}
+    header{position:sticky;top:0;z-index:10;background:#fffaf5ed;backdrop-filter:blur(12px);border-bottom:1px solid #eadde0}
+    .nav{max-width:1160px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-size:28px;letter-spacing:.19em;color:var(--rose-dark);font-weight:bold}.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:.28em;text-align:center;margin-top:3px;color:var(--gold)}
+    .links{display:flex;gap:26px;font:13px Arial,sans-serif;color:#62545a}.links a:hover{color:var(--rose)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--rose);color:white;padding:13px 20px;border:0;border-radius:3px;font:12px Arial,sans-serif;letter-spacing:.07em;cursor:pointer;transition:.2s}
+    .btn:hover{background:var(--rose-dark);transform:translateY(-1px)}.btn.light{background:#fff;color:var(--rose-dark);border:1px solid #dfbdc7}
+    .hero{background:linear-gradient(110deg,#f7e9ec 0%,#fff8f2 58%,#f3e5df 100%);overflow:hidden}
+    .hero-inner{max-width:1160px;margin:auto;padding:78px 24px 82px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+    .eyebrow{font:11px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);margin-bottom:18px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:1.02;font-weight:normal;margin:0 0 22px;color:#513841}
+    h1 em{color:var(--rose);font-style:italic}.hero p{font-size:18px;line-height:1.7;color:#6f5e65;max-width:490px;margin:0 0 28px}
+    .hero-art{min-height:370px;position:relative;display:flex;align-items:center;justify-content:center}
+    .art-circle{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 30%,#fffdf8,#f0dce1 68%,#e8cbd3);display:flex;align-items:center;justify-content:center;box-shadow:0 25px 60px #8f4c6020}
+    .bouquet{font-size:clamp(110px,18vw,190px);filter:drop-shadow(0 14px 8px #8f4c6020);transform:rotate(-8deg)}
+    .floating{position:absolute;background:#fffaf5;padding:13px 18px;box-shadow:0 10px 30px #6b485015;font:12px Arial,sans-serif;color:var(--rose-dark);letter-spacing:.04em}
+    .floating.one{top:13%;right:0}.floating.two{bottom:12%;left:0}
+    section{padding:76px 24px}.wrap{max-width:1160px;margin:auto}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}
+    h2{font-size:clamp(30px,4vw,43px);font-weight:normal;margin:0 0 12px;color:#513841}.section-head p{font:15px/1.7 Arial,sans-serif;color:var(--muted);margin:0}
+    .categories{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .category{background:white;border:1px solid #eee1e3;padding:27px 18px;text-align:center;transition:.2s}
+    .category:hover{transform:translateY(-4px);box-shadow:0 12px 30px #65404b12}.category .ico{font-size:36px;margin-bottom:13px}
+    .category h3{font-size:21px;font-weight:normal;margin:0 0 8px}.category p{font:13px/1.55 Arial,sans-serif;color:var(--muted);margin:0 0 15px}
+    .text-link{font:12px Arial,sans-serif;color:var(--rose-dark);text-decoration:underline;text-underline-offset:4px;cursor:pointer;background:none;border:0}
+    .catalog{background:#fbf2f2}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .product{background:#fff;border:1px solid #ecdee2;overflow:hidden}.product-visual{height:215px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#f8e9ed,#fff6ed);font-size:86px}
+    .product:nth-child(2) .product-visual{background:linear-gradient(145deg,#f5e8dd,#f9edf1)}.product:nth-child(3) .product-visual{background:linear-gradient(145deg,#f0e7ef,#fff5e8)}
+    .product:nth-child(4) .product-visual{background:linear-gradient(145deg,#f8e9e3,#f2e8ed)}.product:nth-child(5) .product-visual{background:linear-gradient(145deg,#f3e9df,#f9edf0)}.product:nth-child(6) .product-visual{background:linear-gradient(145deg,#f7e8ed,#f3e9df)}
+    .product-body{padding:20px}.product-body h3{font-size:21px;font-weight:normal;margin:0 0 8px}.product-body p{font:13px/1.6 Arial,sans-serif;color:var(--muted);margin:0 0 16px}.quote{font:12px Arial,sans-serif;color:var(--rose-dark);letter-spacing:.05em;margin-bottom:16px}
+    .product-body .btn{width:100%}
+    .custom{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.custom-card{background:#f5e6e9;padding:34px}.custom-card h2{font-size:36px}.custom-card p{font:15px/1.8 Arial,sans-serif;color:#715e65}
+    form{background:white;padding:28px;border:1px solid #eee1e3;display:grid;gap:14px}label{font:12px Arial,sans-serif;color:#68575e;display:grid;gap:7px}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #e4d6da;background:#fffdfb;color:var(--ink);border-radius:2px}textarea{min-height:95px;resize:vertical}
+    .about{background:#fff}.about-inner{text-align:center;max-width:720px;margin:auto}.about-inner p{font:15px/1.9 Arial,sans-serif;color:var(--muted)}
+    footer{background:#49343d;color:#fff4f1;padding:38px 24px;text-align:center}.footbrand{font-size:25px;letter-spacing:.2em}footer p{font:12px Arial,sans-serif;color:#e5cfd5;line-height:1.8}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:20;border-radius:50px;padding:15px 19px;background:#278b59;color:white;font:13px Arial,sans-serif;box-shadow:0 8px 24px #0002}
+    @media(max-width:800px){.links{display:none}.hero-inner,.custom{grid-template-columns:1fr}.hero-inner{padding-top:55px;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-art{min-height:300px}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.custom{gap:25px}}
+    @media(max-width:520px){.products{grid-template-columns:1fr}.nav{padding:13px 18px}.brand{font-size:24px}section{padding:58px 18px}.categories{gap:10px}.category{padding:22px 12px}.hero-art{min-height:260px}.floating{font-size:10px}}
+  </style>
+</head>
+<body>
+  <div class="top">FLORES HECHAS A MANO · DETALLES QUE DURAN</div>
+  <header><nav class="nav">
+    <a class="brand" href="#inicio">ESSENZA<small>FLORES CON ENCANTO</small></a>
+    <div class="links"><a href="#catalogo">Catálogo</a><a href="#personaliza">Personaliza</a><a href="#nosotros">Nosotros</a></div>
+    <a class="btn" href="#catalogo">VER RAMOS</a>
+  </nav></header>
+  <main>
+    <section class="hero" id="inicio"><div class="hero-inner">
+      <div><div class="eyebrow">Un detalle hecho especialmente para ti</div>
+        <h1>Flores que<br><em>perduran</em> en el corazón.</h1>
+        <p>Ramos artesanales elaborados con limpiapipas, llenos de color, personalidad y pequeños detalles que hacen especial cualquier ocasión.</p>
+        <a class="btn" href="#catalogo">DESCUBRE LOS RAMOS</a>
+      </div>
+      <div class="hero-art"><div class="art-circle"><div class="bouquet">💐</div></div><div class="floating one">Hecho a mano ♡</div><div class="floating two">Diseños únicos</div></div>
+    </div></section>
+
+    <section><div class="wrap"><div class="section-head"><div class="eyebrow">Encuentra tu detalle ideal</div><h2>Ramos para cada ocasión</h2><p>Elige el tamaño que más te guste o cuéntanos tu idea para crear un ramo especial.</p></div>
+      <div class="categories">
+        <article class="category"><div class="ico">💐</div><h3>Grandes</h3><p>Arreglos protagonistas, llenos de flores y color.</p><button class="text-link" onclick="askCategory('Ramo grande')">Cotizar ramo</button></article>
+        <article class="category"><div class="ico">🌷</div><h3>Medianos</h3><p>Un detalle especial para sorprender.</p><button class="text-link" onclick="askCategory('Ramo mediano')">Cotizar ramo</button></article>
+        <article class="category"><div class="ico">🌸</div><h3>Chicos</h3><p>Pequeños regalos con mucho encanto.</p><button class="text-link" onclick="askCategory('Ramo chico')">Cotizar ramo</button></article>
+        <article class="category"><div class="ico">🎀</div><h3>Personalizados</h3><p>Colores y flores elegidos por ti.</p><button class="text-link" onclick="document.querySelector('#personaliza').scrollIntoView()">Crear mi ramo</button></article>
+      </div>
+    </div></section>
+
+    <section class="catalog" id="catalogo"><div class="wrap"><div class="section-head"><div class="eyebrow">Hechos con dedicación</div><h2>Ideas para inspirarte</h2><p>Cada diseño puede variar en flores, colores y cantidad. El precio se confirma de acuerdo con tu elección.</p></div>
+      <div class="products">
+        <article class="product"><div class="product-visual">🌹</div><div class="product-body"><h3>Ramo de rosas</h3><p>Un clásico romántico que puedes personalizar en tus tonos favoritos.</p><div class="quote">Precio por cotizar</div><button class="btn" onclick="askProduct('Ramo de rosas')">COTIZAR ESTE RAMO</button></div></article>
+        <article class="product"><div class="product-visual">🌻</div><div class="product-body"><h3>Ramo de girasoles</h3><p>Un diseño alegre para llenar de luz cualquier espacio.</p><div class="quote">Precio por cotizar</div><button class="btn" onclick="askProduct('Ramo de girasoles')">COTIZAR ESTE RAMO</button></div></article>
+        <article class="product"><div class="product-visual">🌷</div><div class="product-body"><h3>Ramo de tulipanes</h3><p>Delicado, colorido y perfecto para regalar.</p><div class="quote">Precio por cotizar</div><button class="btn" onclick="askProduct('Ramo de tulipanes')">COTIZAR ESTE RAMO</button></div></article>
+        <article class="product"><div class="product-visual">🌼</div><div class="product-body"><h3>Ramo silvestre</h3><p>Mezcla de flores y colores para un estilo diferente.</p><div class="quote">Precio por cotizar</div><button class="btn" onclick="askProduct('Ramo silvestre')">COTIZAR ESTE RAMO</button></div></article>
+        <article class="product"><div class="product-visual">🪻</div><div class="product-body"><h3>Ramo de temporada</h3><p>Combinaciones especiales que pueden cambiar según disponibilidad.</p><div class="quote">Precio por cotizar</div><button class="btn" onclick="askProduct('Ramo de temporada')">COTIZAR ESTE RAMO</button></div></article>
+        <article class="product"><div class="product-visual">💝</div><div class="product-body"><h3>Diseño personalizado</h3><p>Cuéntanos tu idea y crearemos algo pensado para esa persona.</p><div class="quote">Cotización personalizada</div><button class="btn" onclick="askProduct('Diseño personalizado')">COTIZAR ESTE DISEÑO</button></div></article>
+      </div>
+    </div></section>
+
+    <section id="personaliza"><div class="wrap custom">
+      <div class="custom-card"><div class="eyebrow">Hecho a tu manera</div><h2>Imagina tu ramo. Nosotros lo creamos.</h2><p>Cuéntanos qué flores te gustan, qué colores imaginas y para qué ocasión lo necesitas. Te responderemos por WhatsApp para ayudarte con tu cotización.</p><p><strong>El precio depende del tipo y cantidad de flores y del diseño elegido.</strong></p></div>
+      <form id="customForm"><div class="eyebrow">Cuéntanos tu idea</div>
+        <label>¿Qué tamaño buscas?<select id="size"><option>Grande</option><option>Mediano</option><option>Chico</option><option>Aún no lo decido</option></select></label>
+        <label>Flores o estilo que te gustaría<input id="flowers" placeholder="Ej. rosas, tulipanes, girasoles..."></label>
+        <label>Colores preferidos<input id="colors" placeholder="Ej. rosa, blanco y lila"></label>
+        <label>Detalles adicionales<textarea id="details" placeholder="Cuéntanos para qué ocasión o cómo lo imaginas..."></textarea></label>
+        <button class="btn" type="submit">ENVIAR MI IDEA POR WHATSAPP</button>
+      </form>
+    </div></section>
+    <section class="about" id="nosotros"><div class="about-inner"><div class="eyebrow">Con cariño, para regalar</div><h2>Un detalle que se queda contigo</h2><p>En ESSENZA creemos que los pequeños detalles pueden decir muchísimo. Creamos ramos de flores con limpiapipas, hechos a mano y con diseños variados para celebrar, agradecer o simplemente alegrarle el día a alguien.</p><a class="btn" href="https://wa.me/522212672331?text=Hola%20ESSENZA%2C%20me%20gustar%C3%ADa%20conocer%20sus%20ramos." target="_blank" rel="noopener">HABLEMOS POR WHATSAPP</a></div></section>
+  </main>
+  <footer><div class="footbrand">ESSENZA</div><p>FLORES CON ENCANTO</p><p>Ramos artesanales hechos con limpiapipas.<br>Pedidos y cotizaciones por WhatsApp: +52 221 267 2331</p><p>© <span id="year"></span> ESSENZA</p></footer>
+  <a class="wa-float" href="https://wa.me/522212672331?text=Hola%20ESSENZA%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20ramos." target="_blank" rel="noopener">WhatsApp ✿</a>
+  <script>
+    const WA = "522212672331";
+    function sendWhatsApp(message){ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(message),"_blank","noopener"); }
+    function askProduct(product){ sendWhatsApp("Hola ESSENZA 🌷 Me interesa cotizar: "+product+". ¿Me pueden compartir opciones, tamaños y precio?"); }
+    function askCategory(category){ sendWhatsApp("Hola ESSENZA 🌷 Me gustaría cotizar un "+category+". ¿Qué diseños tienen disponibles y cuál sería el precio según las flores?"); }
+    document.getElementById("customForm").addEventListener("submit",function(e){
+      e.preventDefault();
+      const size=document.getElementById("size").value, flowers=document.getElementById("flowers").value.trim(), colors=document.getElementById("colors").value.trim(), details=document.getElementById("details").value.trim();
+      let msg="Hola ESSENZA 🌷 Quiero cotizar un ramo personalizado.\\nTamaño: "+size+"\\nFlores o estilo: "+(flowers||"Por definir")+"\\nColores: "+(colors||"Por definir")+"\\nDetalles: "+(details||"Sin detalles adicionales")+"\\n¿Me pueden ayudar con opciones y precio?";
+      sendWhatsApp(msg);
+    });
+    document.getElementById("year").textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

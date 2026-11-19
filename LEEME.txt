@@ -1,0 +1,20 @@
+ESSENZA – Tienda web
+
+ARCHIVOS
+- index.html: página completa, adaptable a celular y computadora.
+
+PUBLICAR EN GITHUB PAGES
+1. Crea un repositorio público llamado essenza.
+2. Sube index.html a la raíz del repositorio (no subas únicamente el ZIP).
+3. En Settings > Pages, selecciona Deploy from a branch.
+4. Elige la rama main y la carpeta /(root), guarda.
+5. Cuando termine de publicar, la dirección esperada será:
+   https://irvingrm1706.github.io/essenza/
+
+WHATSAPP
+Los botones abren WhatsApp con un mensaje preparado para +52 221 267 2331.
+La persona debe tocar Enviar dentro de WhatsApp; el sitio no envía mensajes sin su confirmación.
+
+PRECIOS Y EDICIÓN
+Los productos muestran “Precio por cotizar”, porque el costo depende de las flores y el diseño.
+Para editar textos, abre index.html en un editor de texto o desde GitHub y modifica el contenido.
